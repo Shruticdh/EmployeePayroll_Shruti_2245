@@ -1,0 +1,1251 @@
+body{
+    background-color: #f4f4f4;
+}
+
+
+.emp-reg-header{
+    display: flex;
+    background: #FFFFFF;
+    align-items: center;
+    margin:-1.5rem;
+    padding: -1rem;
+    position: fixed;
+    z-index: 1000;
+}
+.emp-reg-header-cnt{
+    top: 0rem;
+    left: 0rem;
+    position: fixed;
+    width: 1920px;
+    background: #FFFFFF;
+    height: 3rem; 
+    opacity: 100;
+    display: flex;
+    align-items:left;
+    padding: 0.6rem 1rem 0.5rem 10rem;
+    flex-direction: column; 
+    text-align: left;
+}
+.emp-reg-header-logo{
+    margin-right: 1rem;
+}
+.emp-reg-header-title{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -2.6rem;
+}
+.emp-reg-header-employee{
+    margin-left: -0.3125rem;
+    color:  #82A70C;
+    font-weight: bold;
+}
+.emp-reg-header-payroll{
+    font-weight: bold;
+    margin-left: -0.3125rem;
+}
+.emp-reg-main{
+    top: 0;
+    left: 0;
+    width:100%;
+    display: flex;
+}
+.emp-reg-main-section{
+    height: 490px;
+    display: flex;
+    background: #FFFFFF;
+    opacity: 1;
+    width: 45%;
+    margin-left: 25%;
+    padding: 1rem 1rem 0rem 5rem;
+    margin-top: 6%;
+    /* width: 35.75rem;
+    height: 490px; 
+    display: flex;
+    background: #FFFFFF;
+    padding: 1rem 1rem 0rem 5rem;
+    opacity: 1;
+    margin: 5rem 20rem 5rem 20rem; */
+}
+.emp-reg-main-form-start{
+    width: 0rem;
+    height: 0rem;
+    text-align: left;
+}
+.emp-reg-main-heading{
+    width: 20rem;
+    height: 3rem;
+    text-align: left;
+    letter-spacing: 0rem;
+    text-transform: capitalize;
+    opacity: 1;
+    color:#42515F;
+}
+.emp-reg-main-form-name{
+    width: 3rem;
+    height: 3.5rem;
+    display: flex;
+}
+.emp-reg-main-form-label{
+    top: 0rem;
+    left: 0rem;
+    width: 1rem;
+    height: 2rem;
+    text-align: left;
+    letter-spacing: 0rem;
+    color: #42515F;
+    opacity: 1;
+    font-size:small;
+}
+.emp-reg-main-form-inputname input{
+    font-size: small;
+    width: 300%;
+    height: 0.8rem;
+    padding: 0.325rem;
+    margin-top: -3rem;
+    margin-left: 6.5rem;
+    opacity: 1;
+}
+.emp-reg-main-form-profile{
+    flex-direction: row;
+    display: flex;
+    width: 3rem;
+    height: 3.5rem;
+    color:#42515F;
+}
+
+.emp-reg-main-image{
+    font-size:small;
+    margin-top: -0.9rem;
+    margin-left: 2.4rem;
+    display: flex;
+}
+.radio1{
+    width: 1;
+    height: 50px;
+    margin-top: -1rem;
+    margin-left: 6.5rem;
+}
+.radio2{
+    width: 1;
+    height: 50px;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+.radio3{
+    width: 1;
+    height: 50px;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+.radio4{
+    width: 1;
+    height: 50px;
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+.emp-reg-main-form-img1 img{
+    width: 2rem;
+    height: 2rem;
+    border-radius:50%;
+    padding: 0.25rem;
+    margin-top: -3rem;
+    margin-left: 7.5rem;
+    flex-direction: row;
+    display: flex;
+}
+.emp-reg-main-form-img2 img{
+    width: 2rem;
+    height: 2rem;
+    border-radius:50rem;
+    padding: 0.25rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
+    flex-direction: row;
+    display: flex;
+}
+.emp-reg-main-form-img3 img{
+    width: 2rem;
+    height: 2rem;
+    border-radius:50rem;
+    padding: 0.25rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
+    flex-direction: row;
+    display: flex;
+}
+.emp-reg-main-form-img4 img{
+    width: 2rem; 
+    height: 2rem;
+    border-radius:50rem; 
+    padding: 0.25rem;
+    margin-top: -3rem;
+    margin-left: 2rem;
+    display: flex;
+}
+.emp-reg-main-form-gender{
+    flex-direction: row;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+.emp-reg-main-form-ginput{
+    width: 1;
+    height: 50px;
+    color: #42515F;
+    font-size: smaller;
+    display: flex;
+}
+.radio5{
+    width: 1;
+    height: 50px;
+    margin-top: -1.2rem;
+    margin-left: 6.5rem;
+}
+.radio6{
+    width: 1;
+    height: 50px;
+    margin-top: -1.2rem;
+    margin-left: 1.9rem;
+}
+.Male{
+    margin-top: -0.1rem;
+}
+.Female{
+    margin-top: -0.1rem
+}
+.emp-reg-main-form-department{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+}
+.emp-reg-main-form-dinput{
+    color: #42515F;
+    font-size: smaller;
+    display: flex;
+}
+.emp-reg-main-form-checkbox1{
+    margin-top: -2rem;
+    margin-left: 6.6rem;  
+}
+.emp-reg-main-form-checkbox2{
+    margin-top: -2rem;
+    margin-left: 2.5rem;   
+}
+.emp-reg-main-form-checkbox3{
+    margin-top: -2rem;
+    margin-left: 1.6rem;    
+}
+.emp-reg-main-form-checkbox4{
+    margin-top: -2rem;
+    margin-left: 1rem;  
+}
+.emp-reg-main-form-checkbox5{
+    margin-top: -2rem;
+    margin-left: 1rem;   
+}
+.hr{
+    margin-top: -0.1rem;
+}
+.sales{
+    margin-top: -0.1rem
+}
+.Finance{
+    margin-top: -0.1rem
+}
+.Engineer{
+    margin-top: -0.1rem
+}
+.others{
+    margin-top: -0.1rem
+}
+.emp-reg-main-form-salary{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+}
+.emp-reg-main-form-select1{
+    margin-top: -2.3rem;
+    margin-left: 7.6rem;
+}
+.emp-reg-main-form-date{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 4rem;
+}
+.emp-reg-main-form-select{
+    display: flex;
+}
+.emp-reg-main-form-selectDay{
+    margin-top: -2.1rem;
+    margin-left: 7.6rem;
+}
+.emp-reg-main-form-selectMonth{
+    margin-top: -1.2rem;
+    margin-left: 16rem;
+}
+.emp-reg-main-form-selectYear{
+    margin-top: -1.2rem;
+    margin-left: 24rem;
+}
+.emp-reg-main-form-notes{
+    display: flex;
+    width: 3rem;
+    height: 2.2rem;
+}
+.emp-reg-main-form-inputnotes input{
+    font-size:small;
+    width: 22rem;
+    height: 3rem;
+    padding: 0.325rem;
+    margin-top: -1.4rem;
+    margin-left: 6.5rem;
+    opacity: 1;
+}
+.emp-reg-main-form-button{
+    display: flex;
+    width: 3rem;
+    height: 4rem;
+}
+.emp-reg-main-form-button1 button{
+    width: 7rem;
+    margin-top: 1.5rem;
+    margin-left: -0rem;
+    flex: 0;
+    padding: 0.1rem;
+    height: 1.8rem;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    opacity: 1;
+}
+.emp-reg-main-form-button2 button{
+    width: 7rem;
+    margin-top: 1.5rem;
+    margin-left: 8.8rem;
+    flex: 0;
+    padding: 0.1rem;
+    height: 1.8rem;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    opacity: 1;
+}
+.emp-reg-main-form-button3 button{
+    width: 7rem;
+    margin-top: 1.5rem;
+    margin-left: 0.6rem;
+    flex: 0;
+    padding: 0.1rem;
+    height: 1.8rem;
+    border: 1px solid #969696;
+    border-radius: 5px;
+    opacity: 1;
+}
+@media(max-width:1024px){
+    .emp-reg-header{
+        display: flex;
+        background: #FFFFFF;
+        align-items: center;
+        margin:-1.5rem;
+        padding: -1rem;
+        position: fixed;
+        z-index: 1000;
+    }
+    .emp-reg-header-cnt{
+        top: 0rem;
+        left: 0rem;
+        position: fixed;
+        width: 1920px;
+        background: #FFFFFF;
+        height: 3rem; 
+        opacity: 100;
+        display: flex;
+        align-items:left;
+        padding: 0.6rem 1rem 0.5rem 10rem;
+        flex-direction: column; 
+        text-align: left;
+    }
+    .emp-reg-header-logo{
+        margin-right: 1rem;
+    }
+    .emp-reg-header-title{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 3rem;
+        margin-top: -2.6rem;
+    }
+    .emp-reg-header-employee{
+        margin-left: -0.3125rem;
+        color:  #82A70C;
+        font-weight: bold;
+    }
+    .emp-reg-header-payroll{
+        font-weight: bold;
+        margin-left: -0.3125rem;
+    }
+    .emp-reg-main{
+        top: 0;
+        left: 0;
+        width:100%;
+        display: flex;
+    }
+    .emp-reg-main-section{
+        height: 490px;
+        display: flex;
+        background: #FFFFFF;
+        opacity: 1;
+        width: 60%;
+        /* margin-left: 20%; */
+        padding: 1rem 1rem 0rem 5rem;
+        margin-top: 10%;
+        /* width: 35.75rem;
+        height: 490px; 
+        display: flex;
+        background: #FFFFFF;
+        padding: 1rem 1rem 0rem 5rem;
+        opacity: 1;
+        margin: 5rem 20rem 5rem 20rem; */
+    }
+    .emp-reg-main-form-start{
+        width: 0rem;
+        height: 0rem;
+        text-align: left;
+    }
+    .emp-reg-main-heading{
+        width: 20rem;
+        height: 3rem;
+        text-align: left;
+        letter-spacing: 0rem;
+        text-transform: capitalize;
+        opacity: 1;
+        color:#42515F;
+    }
+    .emp-reg-main-form-name{
+        width: 3rem;
+        height: 3.5rem;
+        display: flex;
+    }
+    .emp-reg-main-form-label{
+        top: 0rem;
+        left: 0rem;
+        width: 1rem;
+        height: 2rem;
+        text-align: left;
+        letter-spacing: 0rem;
+        color: #42515F;
+        opacity: 1;
+        font-size:small;
+    }
+    .emp-reg-main-form-inputname input{
+        font-size: small;
+        width: 285%;
+        height: 0.8rem;
+        padding: 0.325rem;
+        margin-top: -3rem;
+        margin-left: 6.5rem;
+        opacity: 1;
+    }
+    .emp-reg-main-form-profile{
+        flex-direction: row;
+        display: flex;
+        width: 3rem;
+        height: 3.5rem;
+        color:#42515F;
+    }
+    
+    .emp-reg-main-image{
+        font-size:small;
+        margin-top: -0.9rem;
+        margin-left: 2.4rem;
+        display: flex;
+    }
+    .radio1{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 6.5rem;
+    }
+    .radio2{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    .radio3{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    .radio4{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    .emp-reg-main-form-img1 img{
+        width: 2rem;
+        height: 2rem;
+        border-radius:50%;
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 7.5rem;
+        flex-direction: row;
+        display: flex;
+    }
+    .emp-reg-main-form-img2 img{
+        width: 2rem;
+        height: 2rem;
+        border-radius:50rem;
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        flex-direction: row;
+        display: flex;
+    }
+    .emp-reg-main-form-img3 img{
+        width: 2rem;
+        height: 2rem;
+        border-radius:50rem;
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        flex-direction: row;
+        display: flex;
+    }
+    .emp-reg-main-form-img4 img{
+        width: 2rem; 
+        height: 2rem;
+        border-radius:50rem; 
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        display: flex;
+    }
+    .emp-reg-main-form-gender{
+        flex-direction: row;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+    }
+    .emp-reg-main-form-ginput{
+        width: 1;
+        height: 50px;
+        color: #42515F;
+        font-size: smaller;
+        display: flex;
+    }
+    .radio5{
+        width: 1;
+        height: 50px;
+        margin-top: -1.2rem;
+        margin-left: 6.5rem;
+    }
+    .radio6{
+        width: 1;
+        height: 50px;
+        margin-top: -1.2rem;
+        margin-left: 1.9rem;
+    }
+    .Male{
+        margin-top: -0.1rem;
+    }
+    .Female{
+        margin-top: -0.1rem
+    }
+    .emp-reg-main-form-department{
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+    }
+    .emp-reg-main-form-dinput{
+        color: #42515F;
+        font-size: smaller;
+        display: flex;
+    }
+    .emp-reg-main-form-checkbox1{
+        margin-top: -2rem;
+        margin-left: 6.6rem;  
+    }
+    .emp-reg-main-form-checkbox2{
+        margin-top: -2rem;
+        margin-left: 2.5rem;   
+    }
+    .emp-reg-main-form-checkbox3{
+        margin-top: -2rem;
+        margin-left: 1.6rem;    
+    }
+    .emp-reg-main-form-checkbox4{
+        margin-top: -2rem;
+        margin-left: 1rem;  
+    }
+    .emp-reg-main-form-checkbox5{
+        margin-top: -2rem;
+        margin-left: 1rem;   
+    }
+    .hr{
+        margin-top: -0.1rem;
+    }
+    .sales{
+        margin-top: -0.1rem
+    }
+    .Finance{
+        margin-top: -0.1rem
+    }
+    .Engineer{
+        margin-top: -0.1rem
+    }
+    .others{
+        margin-top: -0.1rem
+    }
+    .emp-reg-main-form-salary{
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 3rem;
+    }
+    .emp-reg-main-form-select1{
+        margin-top: -2.3rem;
+        margin-left: 7.6rem;
+    }
+    .emp-reg-main-form-date{
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 4rem;
+    }
+    .emp-reg-main-form-select{
+        display: flex;
+    }
+    .emp-reg-main-form-selectDay{
+        margin-top: -2.1rem;
+        margin-left: 7.6rem;
+    }
+    .emp-reg-main-form-selectMonth{
+        margin-top: -1.2rem;
+        margin-left: 16rem;
+    }
+    .emp-reg-main-form-selectYear{
+        margin-top: -1.2rem;
+        margin-left: 24rem;
+    }
+    .emp-reg-main-form-notes{
+        display: flex;
+        width: 3rem;
+        height: 2.2rem;
+    }
+    .emp-reg-main-form-inputnotes input{
+        font-size:small;
+        width: 285%;
+        height: 3rem;
+        padding: 0.325rem;
+        margin-top: -1.4rem;
+        margin-left: 6.5rem;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button{
+        display: flex;
+        width: 3rem;
+        height: 4rem;
+    }
+    .emp-reg-main-form-button1 button{
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-left: -0rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button2 button{
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-left: 8.8rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button3 button{
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-left: 0.6rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+    
+}
+@media (max-width: 768px) {
+    .emp-reg-header{
+        display: flex;
+        background: #FFFFFF;
+        align-items: center;
+        margin:-1.5rem;
+        padding: -1rem;
+        position: fixed;
+        z-index: 1000;
+    }
+    .emp-reg-header-cnt{
+        top: 0rem;
+        left: 0rem;
+        position: fixed;
+        width: 1920px;
+        background: #FFFFFF;
+        height: 3rem; 
+        opacity: 100;
+        display: flex;
+        align-items:left;
+        padding: 0.6rem 1rem 0.5rem 10rem;
+        flex-direction: column; 
+        text-align: left;
+    }
+    .emp-reg-header-logo{
+        margin-right: 1rem;
+    }
+    .emp-reg-header-title{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 3rem;
+        margin-top: -2.6rem;
+    }
+    .emp-reg-header-employee{
+        margin-left: -0.3125rem;
+        color:  #82A70C;
+        font-weight: bold;
+    }
+    .emp-reg-header-payroll{
+        font-weight: bold;
+        margin-left: -0.3125rem;
+    }
+    .emp-reg-main{
+        top: 0;
+        left: 0;
+        width:100%;
+        display: flex;
+    }
+    .emp-reg-main-section{
+        height: 35rem;
+        display: flex;
+        background: #FFFFFF;
+        opacity: 1;
+        width: 100% !important;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        padding: 1rem 1rem 0rem 2rem;
+        margin-top: 8%;
+        /* margin: 5rem 11rem 0rem 11rem !important; */
+        /* width: 35.75rem;
+        height: 490px; 
+        display: flex;
+        background: #FFFFFF;
+        padding: 1rem 1rem 0rem 5rem;
+        opacity: 1;
+        margin: 5rem 20rem 5rem 20rem; */
+    }
+    .emp-reg-main-form-start{
+        width: 0rem;
+        height: 0rem;
+        text-align: left;
+    }
+    .emp-reg-main-heading{
+        width: 20rem;
+        height: 3rem;
+        text-align: left;
+        letter-spacing: 0rem;
+        text-transform: capitalize;
+        opacity: 1;
+        color:#42515F;
+    }
+    .emp-reg-main-form-name{
+        width: 3rem;
+        height: 3.5rem;
+        display: flex;
+    }
+    .emp-reg-main-form-label{
+        top: 0rem;
+        left: 0rem;
+        width: 1rem;
+        height: 2rem;
+        text-align: left;
+        letter-spacing: 0rem;
+        color: #42515F;
+        opacity: 1;
+        font-size:small;
+    }
+    .emp-reg-main-form-inputname input{
+        font-size: small;
+        width: 250%;
+        height: 0.8rem;
+        padding: 0.325rem;
+        margin-top: -3rem;
+        margin-left: 5rem;
+        opacity: 1;
+    }
+    .emp-reg-main-form-profile{
+        flex-direction: row;
+        display: flex;
+        width: 3rem;
+        height: 3.5rem;
+        color:#42515F;
+    }
+    
+    .emp-reg-main-image{
+        font-size:small;
+        margin-top: 0rem !important;
+        margin-left:0rem;
+        display: flex;
+    }
+    .radio1{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 5rem;
+    }
+    .radio2{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    .radio3{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    .radio4{
+        width: 1;
+        height: 50px;
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+    .emp-reg-main-form-img1 img{
+        width: 2rem;
+        height: 2rem;
+        border-radius:50%;
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 6rem;
+        flex-direction: row;
+        display: flex;
+    }
+    .emp-reg-main-form-img2 img{
+        width: 2rem;
+        height: 2rem;
+        border-radius:50rem;
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        flex-direction: row;
+        display: flex;
+    }
+    .emp-reg-main-form-img3 img{
+        width: 2rem;
+        height: 2rem;
+        border-radius:50rem;
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        flex-direction: row;
+        display: flex;
+    }
+    .emp-reg-main-form-img4 img{
+        width: 2rem; 
+        height: 2rem;
+        border-radius:50rem; 
+        padding: 0.25rem;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        display: flex;
+    }
+    .emp-reg-main-form-gender{
+        flex-direction: row;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+    }
+    .emp-reg-main-form-ginput{
+        width: 1;
+        height: 50px;
+        color: #42515F;
+        font-size: smaller;
+        display: flex;
+    }
+    .radio5{
+        width: 1;
+        height: 50px;
+        margin-top: -1.2rem;
+        margin-left: 5rem;
+    }
+    .radio6{
+        width: 1;
+        height: 50px;
+        margin-top: -1.2rem;
+        margin-left: 1.9rem;
+    }
+    .Male{
+        margin-top: -0.1rem;
+    }
+    .Female{
+        margin-top: -0.1rem
+    }
+    .emp-reg-main-form-department{
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+    .emp-reg-main-form-dinput{
+        color: #42515F;
+        font-size: smaller;
+        display: flex;
+    }
+    .emp-reg-main-form-checkbox1{
+        margin-top: -2rem;
+        margin-left: 5rem;  
+    }
+    .emp-reg-main-form-checkbox2{
+        margin-top: -2rem;
+        margin-left: 2.5rem;   
+    }
+    .emp-reg-main-form-checkbox3{
+        margin-top: -2rem;
+        margin-left: 1.6rem;    
+    }
+    .emp-reg-main-form-checkbox4{
+        margin-top: -2rem;
+        margin-left: 1rem;  
+    }
+    .emp-reg-main-form-checkbox5{
+        margin-top: 2rem;
+        margin-left: -17.7rem;   
+    }
+    .hr{
+        margin-top: -0.1rem;
+    }
+    .sales{
+        margin-top: -0.1rem
+    }
+    .Finance{
+        margin-top: -0.1rem
+    }
+    .Engineer{
+        margin-top: -0.1rem
+    }
+    .others{
+        margin-top: 1.9rem
+    }
+    .emp-reg-main-form-salary{
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 3rem;
+    }
+    .emp-reg-main-form-select1{
+        margin-top: -2.3rem;
+        margin-left: 6rem;
+    }
+    .emp-reg-main-form-date{
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 4rem;
+    }
+    .emp-reg-main-form-select{
+        display: flex;
+    }
+    .emp-reg-main-form-selectDay{
+        margin-top: -2.1rem;
+        margin-left: 6rem;
+    }
+    .emp-reg-main-form-selectMonth{
+        margin-top: -1.2rem;
+        margin-left: 13rem;
+    }
+    .emp-reg-main-form-selectYear{
+        margin-top: -1.2rem;
+        margin-left: 20rem;
+    }
+    .emp-reg-main-form-notes{
+        display: flex;
+        width: 3rem;
+        height: 2.2rem;
+    }
+    .emp-reg-main-form-inputnotes input{
+        font-size:small;
+        width: 250%;
+        height: 3rem;
+        padding: 0.325rem;
+        margin-top: -1.4rem;
+        margin-left: 5rem;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button{
+        display: flex;
+        width: 3rem;
+        height: 4rem;
+    }
+    .emp-reg-main-form-button1 button{
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-left: -0rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button2 button{
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-left: 8.8rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button3 button{
+        width: 7rem;
+        margin-top: 4rem;
+        margin-left: -22.8rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .emp-reg-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0.5rem;
+        position: fixed;
+        width: 100%;
+    }
+
+    .emp-reg-header-cnt {
+        width: 100%;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    .emp-reg-header-title {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+        margin-top: -13%;
+        margin-left: -47%;
+    }
+    .emp-reg-header-payroll{
+        font-weight: bold;
+        margin-left: -3.5%;
+    }
+    .emp-reg-main{
+        width:100%;
+    }
+    .emp-reg-main-section {
+        width: 75% !important;
+        height: 72rem;
+        /* margin: 4rem 0rem 4rem 1rem !important; */
+        padding: 1rem !important;
+        position: fixed;
+    }
+
+    .emp-reg-main-form-inputname input {
+        width: 300%;
+        margin-left: 2rem;
+    }
+
+    .emp-reg-main-form-profile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 11rem;
+        /* height: -10%; */
+    }
+    .radio1{
+        margin-top: 1%;
+        margin-left: 1rem;
+    }
+    .radio2{
+        margin-top: 1%;
+        margin-left: 1rem;
+    }
+    .radio3{
+    
+        margin-top: 1%;
+        margin-left: 1rem;
+    }
+    .radio4{
+        margin-top: 1%;
+        margin-left: 1rem;
+    }
+    .emp-reg-main-form-img1 img{
+        margin-left: 2rem;
+    }
+
+    .emp-reg-main-form-gender{
+        flex-direction: column;
+        display: flex;
+        width: 3rem;
+        height: 8rem;
+    }
+    .emp-reg-main-form-ginput{
+        width: 1;
+        height: 50px;
+        color: #42515F;
+        font-size: smaller;
+    }
+    .radio5{
+        margin-top: -1.2rem;
+        margin-left: 1rem;
+    }
+    .radio6{
+      
+        margin-top: -1.2rem;
+        margin-left: 1rem;
+    }
+    .Male{
+        margin-top: -0.1rem;
+    }
+    .Female{
+        margin-top: -0.1rem
+    }
+
+    .emp-reg-main-form-department{
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 14rem;
+    }
+    .emp-reg-main-form-checkbox1{
+        margin-top: 0.5rem;
+        margin-left: 1rem;  
+    }
+    .emp-reg-main-form-checkbox2{
+        margin-top: 1rem;
+        margin-left: 1rem;   
+    }
+    .emp-reg-main-form-checkbox3{
+        margin-top: 1rem;
+        margin-left: 1rem;    
+    }
+    .emp-reg-main-form-checkbox4{
+        margin-top: 1rem;
+        margin-left: 1rem;  
+    }
+    .emp-reg-main-form-checkbox5{
+        margin-top: 1rem;
+        margin-left: 1rem;   
+    }
+    .hr{
+        margin-top: 0.5rem;
+    }
+    .sales{
+        margin-top: 1rem
+    }
+    .Finance{
+        margin-top: 1rem
+    }
+    .Engineer{
+        margin-top: 1rem
+    }
+    .others{
+        margin-top: 1rem
+    }
+    .emp-reg-main-form-salary{
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 3rem;
+    }
+    .emp-reg-main-form-select1{
+        margin-top: -2rem;
+        margin-left: 3.5rem;
+    }
+    .emp-reg-main-form-date{
+        display: flex;
+        flex-direction: column;
+        width: 3rem;
+        height: 10rem;
+    }
+    .emp-reg-main-form-select{
+        display: flex;
+    }
+    .emp-reg-main-form-selectDay{
+        margin-top: -2.1rem;
+        margin-left: 3.5rem;
+    }
+    .emp-reg-main-form-selectMonth{
+        margin-top: 1.2rem;
+        margin-left: 3.5rem;
+    }
+    .emp-reg-main-form-selectYear{
+        margin-top: 1.2rem;
+        margin-left: 3.5rem;
+    }
+    .emp-reg-main-form-inputnotes input {
+        width: 200%;
+        margin-left: 2.5rem;
+    }
+
+    .emp-reg-main-form-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .emp-reg-main-form-button1 button{
+        width: 7rem;
+        margin-top: 2rem;
+        margin-left: 7rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button2 button{
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-left: 7rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+    .emp-reg-main-form-button3 button{
+        width: 7rem;
+        margin-top: 1.5rem;
+        margin-left: 7rem;
+        flex: 0;
+        padding: 0.1rem;
+        height: 1.8rem;
+        border: 1px solid #969696;
+        border-radius: 5px;
+        opacity: 1;
+    }
+}

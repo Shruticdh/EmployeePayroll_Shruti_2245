@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE PAYROLL</title>
+    <link rel="stylesheet" href="../Styles/EmployeePayrollDashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="emp-dash-page">
+        <header class="emp-dash-header">
+            <div class="emp-dash-header-cnt">
+                <div class="emp-dash-header-logo">
+                    <img src="../Assets/Logo.jpg">
+                </div>
+                <div class="emp-dash-header-title">
+                    <span class="emp-dash-header-employee">EMPLOYEE</span>
+                    <span class="emp-dash-header-payroll">PAYROLL</span>
+                </div>
+            </div>
+        </header>
+        <div class="emp-dash-main-employeedetail">
+            <div class="emp-dash-main-employeedetail"><h2 class="emp-dash-main-employeedetail-heading" >Employee Details</h2></div>
+        </div>
+            <div class="emp-dash-main-search">
+                <input class="emp-dash-main-searchplaceholder" type="text" placeholder="Search">
+                <button class="emp-dash-main-search-bnt"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="emp-dash-main-adduser">
+                <a href="../Pages/EmployeePayrollRegister.html">
+                    <button class="emp-dash-main-adduser-bnt"><i class="fas fa-plus-circle"></i> <span class="adduser">Add User</span>
+                    </button>
+                </a>
+            </div>
+        <div class="emp-dash-main-cnt">
+            <table class="emp-dash-main-cnt-table">
+                <thead class="emp-dash-main-cnt-table-head">
+                    <tr class="emp-dash-main-cnt-table-row">
+                        <th class="emp-dash-main-cnt-actionsDashboard"></th>
+                        <th class="emp-dash-main-cnt-nameDashboard">Name</th>
+                        <th class="emp-dash-main-cnt-genderDashboard">Gender</th>
+                        <th class="emp-dash-main-cnt-departmentDashboard">Department</th>
+                        <th class="emp-dash-main-cnt-salaryDashboard">Salary</th>
+                        <th class="emp-dash-main-cnt-startDateDashboard">Start Date</th>
+                        <th class="emp-dash-main-cnt-actionsDashboard">Actions</th>                
+                    </tr>
+                </thead>
+                <div class="employee">
+                <tbody id="employeeTable"></tbody>
+                </div>  
+            </table>
+        </div>
+        <!-- <div class="emp-dash-main-cnt">
+            <div class="emp-dash-main-cnt-nameDashboard">NAME</div>
+            <div class="emp-dash-main-cnt-genderDashboard">GENDER</div>
+            <div class="emp-dash-main-cnt-departmentDashboard">DEPARTMENT</div>
+            <div class="emp-dash-main-cnt-salaryDashboard">SALARY</div>
+            <div class="emp-dash-main-cnt-startDateDashboard">START DATE</div>
+            <div class="emp-dash-main-cnt-actionsDashboard">ACTIONS</div>
+        </div>
+        <div class="employeeTable"></div>
+    </div> -->
+    <script src="../JS/EmployeePayrollRegister.js"></script>
+    <script src="../JS/EmployeePayrollDashboard.js"></script>
+</body>
+</html>

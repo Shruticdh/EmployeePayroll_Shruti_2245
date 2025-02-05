@@ -1,0 +1,186 @@
+body{
+    background-color: #f4f4f4;
+    /* background-color: black; */
+}
+.emp-dash-header{
+    display: flex;
+    background: #FFFFFF;
+    align-items: center;
+    margin:-1rem;
+    padding: -1rem;
+    position: fixed;
+    height: 5rem;
+    /* z-index: 1000; */
+}
+.emp-dash-header-cnt{
+    top: 0rem;
+    left: 0rem; 
+    display: flex;
+    position: fixed;
+    background-color: #ffffff;
+    width: 1920px;
+    height: 3rem;
+    flex-direction: column;
+    padding: 0.6rem 1rem 0.5rem 6rem;
+    opacity: 100;
+}
+.emp-dash-header-logo{
+    margin-right: 1rem;
+    /* margin-top: -0.5rem; */
+}
+.emp-dash-header-title{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -2.6rem;
+}
+.emp-dash-header-employee{
+    margin-left: -0.3125rem;
+    color:  #82A70C;
+    font-weight: bold;
+}
+.emp-dash-header-payroll{
+    font-weight: bold;
+    color: #42515F;
+    margin-left: -0.3125rem;
+}
+.emp-dash-main-employeedetail{
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    text-align: left;
+    letter-spacing: 0px;
+    opacity: 1;
+    color: #42515F;
+    width: 217px;
+    height: 37px;
+    text-align: left;
+    /* font: normal normal bold 28px / 25px Roboto; */
+}
+.emp-dash-main-employeedetail-heading{
+    color: #42515F;
+}
+.emp-dash-main-search{
+    opacity: 1;
+    width:100%;
+    margin-top: 1.5rem;
+    margin-left: 52rem;
+    display: flex;
+}
+.emp-dash-main-searchplaceholder{
+    background-color: #FFFFFF;
+}
+.emp-dash-main-adduser {
+    margin-top: -1.5rem;
+    margin-left: 67rem;
+}
+.emp-dash-main-search-bnt button{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    /* width: 10rem;
+    height: 10rem; */
+    padding: 1.5rem;
+    margin-top: 5rem;
+}
+.emp-dash-main-adduser-bnt{
+    background-color: #82A70C;
+    color: #FFFFFF;
+    width: 6rem;
+    height: -1rem;
+    padding: 0.5rem;    
+}
+.emp-dash-main-cnt{
+    display:flex ;
+    /* position: fixed; */
+    margin-top:1rem;
+    margin-left: 5rem;
+    width: 86%;
+    height: 10rem;
+    border-radius: 3px 3px 0px 0px;
+    opacity: 1;
+}
+.emp-dash-main-cnt-table-head{
+    background-color: #42515F;
+    color: #FFFFFF;
+    width: 100rem;
+    height: 4rem;
+}
+.emp-dash-main-cnt-table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.3rem;
+}
+.employee tr{
+    width:100%;
+}
+.emp-dash-main-cnt-table th  {
+    padding: 0rem 2rem 0rem 2rem;
+}
+.emp-dash-main-cnt-table td{
+    padding: 0rem 2rem 0rem 2rem;
+    background-color: #ffffff ;
+    border: #d6d6d6 0.1px solid;
+    color: black;
+}
+.emp-dash-main-cnt-table tr{
+    width:80%;
+}
+
+.profile-image {
+    width: 2rem; /* Adjust as needed */
+    height: 2rem; /* Adjust as needed */
+    border-radius: 50%; /* For a circular image */
+    object-fit: cover; /* To prevent image distortion */
+    /* Add any other styles you want */
+}
+.emp-reg-main-form-profile{
+    max-width: 100%;
+    max-height: 100%;
+}
+/* .emp-dash-main-cnt-table-row {
+    margin-left:8rem;
+    margin-top: 5rem;
+}
+.emp-dash-main-cnt-nameDashboard{
+    color:#FFFFFF;
+    font-size: larger;
+    margin-top: 1.25rem;
+    margin-left: 8rem; 
+}
+.emp-dash-main-cnt-genderDashboard{
+    color:#FFFFFF;
+    font-size: larger;
+    margin-top: 1.25rem;
+    margin-left: 6rem;
+}
+.emp-dash-main-cnt-departmentDashboard{
+    color:#FFFFFF;
+    font-size: larger;
+    margin-top: 1.25rem;
+    margin-left: 7rem;
+}
+.emp-dash-main-cnt-salaryDashboard{
+    color:#FFFFFF;
+    font-size: larger;
+    margin-top: 1.25rem;
+    margin-left: 7rem;
+}
+.emp-dash-main-cnt-startDateDashboard{
+    color:#FFFFFF;
+    font-size: larger;
+    margin-top: 1.25rem;
+    margin-left: 7rem;
+}
+.emp-dash-main-cnt-actionsDashboard{
+    color:#FFFFFF;
+    font-size: larger;
+    margin-top: 1.25rem;
+    margin-left:8rem;
+} */
+/* #employeeTable{
+
+} */

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLOYEE PAYROLL</title>
+    <link rel="stylesheet" href="../Styles/EmployeePayrollRegister.css">
+</head>
+<body>
+    <div class="emp-reg-page">
+    <header class="emp-reg-header">
+            <div class="emp-reg-header-cnt">
+                <div class ="emp-reg-header-logo">
+                    <img src=" ../Assets/Logo.jpg"> 
+                </div>
+                <div  class ="emp-reg-header-title">
+                    <span class ="emp-reg-header-employee">EMPLOYEE</span>
+                    <span class ="emp-reg-header-payroll">PAYROLL</span>
+                </div>
+            </div>
+            <!-- <div>EMPLOYEE PAYROLL</div> -->  
+    </header>
+
+    <main class ="emp-reg-main">
+        <div class ="emp-reg-main-section">
+            <form id ="employeeForm" class ="emp-reg-main-form" type="submit">
+               <div class ="emp-reg-main-form-start"> 
+                <div class="emp-reg-main-heading">
+                    <h3>Employee Payroll Form<h3>
+                </div>
+                <div class ="emp-reg-main-form-name">
+                    <div class ="emp-reg-main-form-label"><label for="name">Name</label></div>
+                    <div class ="emp-reg-main-form-inputname"><input type="text" placeholder=""></div>
+                    <br>
+                </div>
+                    <div class ="emp-reg-main-form-profile">
+                       <div class ="emp-reg-main-form-label"> <label><span class ="emp-reg-main-profile"></span>Profile</span> <span class ="emp-reg-main-image">Image</span></label></div>
+                        <label>
+                            <div class ="emp-reg-main-form-pinput"> <input class ="radio1" type="radio" name="profile" value="Image1 (2).jpg"></div>
+                            <div class ="emp-reg-main-form-img1"><img src="../Assets/Image1 (2).jpg"></div>
+                        </label>
+                        <label>
+                            <div class ="emp-reg-main-form-pinput"> <input class ="radio2" type="radio" name="profile" value="Image1 (4).jpg"></div>
+                            <div class ="emp-reg-main-form-img2"> <img src="../Assets/Image1 (4).jpg"></div>
+                        </label>
+                        <label>
+                            <div class ="emp-reg-main-form-pinput"> <input class ="radio3" type="radio" name="profile" value="Image1 (3).jpg"></div>
+                            <div class ="emp-reg-main-form-img3"> <img src="../Assets/Image1 (3).jpg"></div>
+                        </label>
+                        <label>
+                            <div class ="emp-reg-main-form-pinput"> <input class ="radio4" type="radio" name="profile" value="Image1 (1).jpg"></div>
+                            <div class ="emp-reg-main-form-img4"><img src="../Assets/Image1 (1).jpg"></div>
+                        </label>
+                    </div>
+                    <div class ="emp-reg-main-form-gender">
+                        <div class ="emp-reg-main-form-label"><label>Gender</label></div>
+                        <div class ="emp-reg-main-form-ginput"><input class ="radio5" type="radio" value="Male" name="gender"><sapn class="Male">Male</sapn></div>
+                        <div class ="emp-reg-main-form-ginput"><input class ="radio6" type="radio" value="Female" name="gender"><sapn class="Female">Female</sapn></div>
+                    </div>
+                    <div class ="emp-reg-main-form-department">
+                        <div class ="emp-reg-main-form-label"><label>Department</label></div>
+                        <div class ="emp-reg-main-form-dinput"><input class ="emp-reg-main-form-checkbox1" type="checkbox" value="HR" name="department"><sapn class="hr">HR</sapn></div>
+                        <div class ="emp-reg-main-form-dinput"><input class ="emp-reg-main-form-checkbox2" type="checkbox" value="Sales" name="department"><span class="sales">Sales</span></div>
+                        <div class ="emp-reg-main-form-dinput"><input class ="emp-reg-main-form-checkbox3" type="checkbox" value="Finance" name="department"><span class="Finance">Finance</span></div>
+                        <div class ="emp-reg-main-form-dinput"><input class ="emp-reg-main-form-checkbox4" type="checkbox" value="Engineer" name="department"><span class="Engineer">Engineer</span></div>
+                        <div class ="emp-reg-main-form-dinput"><input class ="emp-reg-main-form-checkbox5" type="checkbox" value="Others" name="department"><span class="others">Others</span></div>
+                    </div>
+                    <div class ="emp-reg-main-form-salary">
+                        <div class ="emp-reg-main-form-label"><label>Salary</label></div>
+                        <div class ="emp-reg-main-form-select1">
+                            <select id="selectsalary">
+                                <option>Select Salary</option>
+                                <option>6 lpa</option>
+                                <option>9 lpa</option>
+                                <option>12 lpa</option>
+                            </select>
+                        </div>
+                    </div>    
+                    <div class ="emp-reg-main-form-date">
+                        <div class ="emp-reg-main-form-label"><label>Start Date</label></div>
+                        <div class ="emp-reg-main-form-select3">
+                            <div class ="emp-reg-main-form-selectDay">
+                                <select id="selectday">
+                                    <option class="emp-reg-select-label">Select Day</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>   
+                            <div class ="emp-reg-main-form-selectMonth">
+                                <select id="selectMonth">
+                                    <option>Months</option>
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </div>   
+                            <div class ="emp-reg-main-form-selectYear">
+                                <select id="selectYear">
+                                    <option>Years</option>
+                                    <option>2025</option>
+                                    <option>2024</option>
+                                    <option>2023</option>
+                                    <option>2022</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                </select>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class ="emp-reg-main-form-notes">
+                        <div class ="emp-reg-main-form-label"><label for="name">Notes</label></div>
+                        <div class ="emp-reg-main-form-inputnotes"><input type="text" placeholder=""></div><br>
+                    </div>
+                    <div class ="emp-reg-main-form-button">
+                        <div class ="emp-reg-main-form-button1"><a href="../Pages/EmployeePayrollDashboard.html"><button id="emp-reg-main-form-cancel" type="click" >Cancel</button></a></div>
+                        <div class ="emp-reg-main-form-button2"><button id="emp-reg-main-form-submit" type="submit">Submit</button></div>
+                        <div class ="emp-reg-main-form-button3"><button id="emp-reg-main-form-Reset"  type="click" onclick="alert('Reset')">Reset</button></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    </div>
+    <script src="../JS/EmployeePayrollRegister.js"></script>
+</body>
+</html>
