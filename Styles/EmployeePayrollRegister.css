@@ -398,7 +398,7 @@ body{
         background: #FFFFFF;
         opacity: 1;
         width: 60%;
-        /* margin-left: 20%; */
+        margin-left: 10%;
         padding: 1rem 1rem 0rem 5rem;
         margin-top: 10%;
         /* width: 35.75rem;
@@ -1066,9 +1066,9 @@ body{
     .emp-reg-main-section {
         width: 75% !important;
         height: 72rem;
-        /* margin: 4rem 0rem 4rem 1rem !important; */
+        margin: 4rem 0rem 4rem 1rem !important;
         padding: 1rem !important;
-        position: fixed;
+        /* position: fixed; */
     }
 
     .emp-reg-main-form-inputname input {

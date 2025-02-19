@@ -1,7 +1,36 @@
 {
-    "employee" :[
-        {
-
-        }
-    ]   
-}
+    "employees": [ 
+      {
+        "name": "shruti",
+        "profileImage": "img1",
+        "gender": "female",
+        "departments": [
+          "Finance"
+        ],
+        "salary": "12 lpa",
+        "startDate": {
+          "day": "18",
+          "month": "October",
+          "year": "2025"
+        },
+        "notes": "hii shruti",
+        "id": "6ea8"
+      },
+      {
+        "id": "a1a8",
+        "name": "Bharti Gaur",
+        "profileImage": "img1",
+        "gender": "female",
+        "departments": [
+          "Engineer"
+        ],
+        "salary": "9lpa",
+        "startDate": {
+          "day": "20",
+          "month": "April",
+          "year": "2025"
+        },
+        "notes": "hey"
+      }
+    ]
+  }

@@ -1,100 +1,100 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("employeeForm");
-    const nameInput = document.querySelector(".emp-reg-main-form-inputname input");
-    const genderInputs = document.querySelectorAll("input[name='gender']");
-    const departmentInputs = document.querySelectorAll("input[name='department']");
-    const salarySelect = document.getElementById("selectsalary");
-    const startDateSelect = {
-        day: document.getElementById("selectday"),
-        month: document.getElementById("selectMonth"),
-        year: document.getElementById("selectYear"),
-    };
-    const notesTextarea = document.querySelector(".emp-reg-main-form-inputnotes input");
-    const profileImageInputs = document.querySelectorAll("input[name='profile']");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const form = document.getElementById("employeeForm");
+//     const nameInput = document.querySelector(".emp-reg-main-form-inputname input");
+//     const genderInputs = document.querySelectorAll("input[name='gender']");
+//     const departmentInputs = document.querySelectorAll("input[name='department']");
+//     const salarySelect = document.getElementById("selectsalary");
+//     const startDateSelect = {
+//         day: document.getElementById("selectday"),
+//         month: document.getElementById("selectMonth"),
+//         year: document.getElementById("selectYear"),
+//     };
+//     const notesTextarea = document.querySelector(".emp-reg-main-form-inputnotes input");
+//     const profileImageInputs = document.querySelectorAll("input[name='profile']");
 
-    const resetButton = document.querySelector(".regResetButton"); // Or use ID if available
-    const submitButton = document.getElementById("emp-reg-main-form-submit");
+//     const resetButton = document.querySelector(".regResetButton"); // Or use ID if available
+//     const submitButton = document.getElementById("emp-reg-main-form-submit");
 
-    let editIndex = localStorage.getItem("editEmployeeIndex");
-    let editEmployeeData = localStorage.getItem("editEmployeeData");
+//     let editIndex = localStorage.getItem("editEmployeeIndex");
+//     let editEmployeeData = localStorage.getItem("editEmployeeData");
 
-    if (editEmployeeData) {
-        editEmployeeData = JSON.parse(editEmployeeData);
+//     if (editEmployeeData) {
+//         editEmployeeData = JSON.parse(editEmployeeData);
 
-        nameInput.value = editEmployeeData.name;
-        salarySelect.value = editEmployeeData.salary;
-        notesTextarea.value = editEmployeeData.notes || "";
+//         nameInput.value = editEmployeeData.name;
+//         salarySelect.value = editEmployeeData.salary;
+//         notesTextarea.value = editEmployeeData.notes || "";
 
-        genderInputs.forEach(input => {
-            input.checked = input.value === editEmployeeData.gender;
-        });
+//         genderInputs.forEach(input => {
+//             input.checked = input.value === editEmployeeData.gender;
+//         });
 
-        // Improved Department Handling (Use input.value directly)
-        departmentInputs.forEach(input => {
-            input.checked = editEmployeeData.departments.includes(input.value);
-        });
+//         // Improved Department Handling (Use input.value directly)
+//         departmentInputs.forEach(input => {
+//             input.checked = editEmployeeData.departments.includes(input.value);
+//         });
 
-        profileImageInputs.forEach(input => {
-            input.checked = input.value === editEmployeeData.profileImage;
-        });
+//         profileImageInputs.forEach(input => {
+//             input.checked = input.value === editEmployeeData.profileImage;
+//         });
 
-        startDateSelect.day.value = editEmployeeData.startDate.day;
-        startDateSelect.month.value = editEmployeeData.startDate.month;
-        startDateSelect.year.value = editEmployeeData.startDate.year;
+//         startDateSelect.day.value = editEmployeeData.startDate.day;
+//         startDateSelect.month.value = editEmployeeData.startDate.month;
+//         startDateSelect.year.value = editEmployeeData.startDate.year;
 
-        localStorage.removeItem("editEmployeeIndex");
-        localStorage.removeItem("editEmployeeData");
+//         localStorage.removeItem("editEmployeeIndex");
+//         localStorage.removeItem("editEmployeeData");
 
-        editIndex = null; // Reset after populating
-    }
+//         editIndex = null; // Reset after populating
+//     }
 
-    function validateForm() {
-        let valid = true;
-        // ... (your existing validation logic)
-        return valid;
-    }
+//     function validateForm() {
+//         let valid = true;
+//         // ... (your existing validation logic)
+//         return valid;
+//     }
 
-    if (resetButton) {
-        resetButton.addEventListener("click", function () {
-            form.reset();
-        });
-    }
+//     if (resetButton) {
+//         resetButton.addEventListener("click", function () {
+//             form.reset();
+//         });
+//     }
 
-    if (submitButton) {
-        submitButton.addEventListener("click", function (event) {
-            event.preventDefault();
+//     if (submitButton) {
+//         submitButton.addEventListener("click", function (event) {
+//             event.preventDefault();
 
-            if (validateForm()) {
-                const formData = {
-                    name: nameInput.value,
-                    profileImage: document.querySelector("input[name='profile']:checked")?.value,
-                    gender: document.querySelector("input[name='gender']:checked")?.value,
-                    departments: Array.from(departmentInputs).filter(input => input.checked).map(input => input.value), // Use input.value
-                    salary: salarySelect.value,
-                    startDate: {
-                        day: startDateSelect.day.value,
-                        month: startDateSelect.month.value,
-                        year: startDateSelect.year.value,
-                    },
-                    notes: notesTextarea.value
-                };
+//             if (validateForm()) {
+//                 const formData = {
+//                     name: nameInput.value,
+//                     profileImage: document.querySelector("input[name='profile']:checked")?.value,
+//                     gender: document.querySelector("input[name='gender']:checked")?.value,
+//                     departments: Array.from(departmentInputs).filter(input => input.checked).map(input => input.value), // Use input.value
+//                     salary: salarySelect.value,
+//                     startDate: {
+//                         day: startDateSelect.day.value,
+//                         month: startDateSelect.month.value,
+//                         year: startDateSelect.year.value,
+//                     },
+//                     notes: notesTextarea.value
+//                 };
 
-                let existingData = JSON.parse(localStorage.getItem("employeeData")) || [];
+//                 let existingData = JSON.parse(localStorage.getItem("employeeData")) || [];
 
-                if (editIndex !== null && editIndex !== undefined && editIndex >= 0 && editIndex < existingData.length) {
-                    existingData[editIndex] = formData;
-                } else {
-                    existingData.push(formData);
-                }
+//                 if (editIndex !== null && editIndex !== undefined && editIndex >= 0 && editIndex < existingData.length) {
+//                     existingData[editIndex] = formData;
+//                 } else {
+//                     existingData.push(formData);
+//                 }
 
-                localStorage.setItem("employeeData", JSON.stringify(existingData));
+//                 localStorage.setItem("employeeData", JSON.stringify(existingData));
 
-                alert("Employee data saved successfully!");
-                window.location.href = "EmployeePayrollDashboard.html"; // Or window.location.reload();
-            }
-        });
-    }
-});
+//                 alert("Employee data saved successfully!");
+//                 window.location.href = "EmployeePayrollDashboard.html"; // Or window.location.reload();
+//             }
+//         });
+//     }
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("employeeForm");
@@ -152,6 +152,10 @@ document.addEventListener("DOMContentLoaded", function () {
     function validateForm() {
         let valid = true;
 
+        // if(/[^a-zA-Z\s]/.test(nameInput)){
+        //     alert("not contain number");
+        //     return;
+        // }
         if (nameInput.value.trim() === "") {
             alert("Name is required.");
             valid = false;
